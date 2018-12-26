@@ -1,22 +1,30 @@
 # Project specific
-
 variable "host_domain" {
   type = "string"
 }
 
 variable "record" {
   type = "string"
+  default = "A"
+}
+
+variable "instance_name_tag" {
+  type = "string"
+}
+
+variable "end_point" {
+  type = "string"
 }
 
 variable "record_type" {
   # TXT, CNAME, A
-  default = "A"
   type = "string"
+  default = "A"
 }
 
 variable "ttl" {
   type = "string"
-  default = "900"
+  default = "300"
 }
 
 variable "application" {
@@ -25,7 +33,9 @@ variable "application" {
 
 variable "environment" {
   type = "string"
+  default = "prod"
 }
 variable "zone" {
   type = "string"
+  default = "web"
 }
