@@ -3,18 +3,13 @@ variable "host_domain" {
   type = "string"
 }
 
-variable "record" {
-  type = "string"
-  default = "A"
-}
-
-variable "instance_name_tag" {
+variable "instance_tag_name" {
   type = "string"
 }
 
-variable "end_point" {
-  type = "string"
-}
+# variable "end_point" {
+#   type = "string"
+# }
 
 variable "record_type" {
   # TXT, CNAME, A

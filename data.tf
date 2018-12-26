@@ -8,7 +8,7 @@ data "aws_instance" "this" {
   # }
   filter {
     name   = "tag:Name"
-    values = ["${var.instance_name_tag}"]
+    values = ["${var.instance_tag_name}"]
   }
 }
 
